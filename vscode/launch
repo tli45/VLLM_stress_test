@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "运行压力测试",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/stress_tester.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": []
+        },
+        {
+            "name": "运行参数探索",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/param_explorer.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "运行监控",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/monitor.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python文件",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
