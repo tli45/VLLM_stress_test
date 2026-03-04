@@ -1,0 +1,42 @@
+[
+  {
+    "max_tokens": 50,
+    "temperature": 0.1,
+    "description": "短回答+低随机性",
+    "success_rate": 1.0,
+    "avg_latency": 1.3028570771217347,
+    "qps": 0.7675438983754035
+  },
+  {
+    "max_tokens": 500,
+    "temperature": 0.1,
+    "description": "长回答+低随机性",
+    "success_rate": 1.0,
+    "avg_latency": 11.136621463298798,
+    "qps": 0.0897938394777574
+  },
+  {
+    "max_tokens": 50,
+    "temperature": 1.5,
+    "description": "短回答+高随机性",
+    "success_rate": 1.0,
+    "avg_latency": 1.2383503675460816,
+    "qps": 0.8075259039827336
+  },
+  {
+    "max_tokens": 500,
+    "temperature": 1.5,
+    "description": "长回答+高随机性",
+    "success_rate": 1.0,
+    "avg_latency": 11.377486956119537,
+    "qps": 0.0878928715855074
+  },
+  {
+    "max_tokens": 2000,
+    "temperature": 0.7,
+    "description": "超长回答+中等随机性",
+    "success_rate": 1.0,
+    "avg_latency": 12.507236647605897,
+    "qps": 0.07995371225277148
+  }
+]

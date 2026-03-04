@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "max_safe_concurrent": 10,
+    "recommended_concurrent": 5,
+    "total_tests": 15,
+    "successful_tests": 12,
+    "failed_tests": 3,
+    "test_duration": "2分30秒",
+    "last_updated": "2024-12-15T14:35:00"
+  },
+  "crash_points": [
+    {
+      "concurrent": 20,
+      "timestamp": "2024-12-15T14:32:15",
+      "reason": "成功率过低: 12%",
+      "avg_latency": 8.45,
+      "parameters": {
+        "max_tokens": 50,
+        "temperature": 0.7
+      },
+      "recovery_time": 15
+    }
+  ],
+  "warning_points": [
+    {
+      "concurrent": 15, 
+      "timestamp": "2024-12-15T14:31:45",
+      "reason": "平均延迟超过3秒",
+      "avg_latency": 3.2,
+      "success_rate": 0.76
+    }
+  ],
+  "optimal_performance": {
+    "concurrent_range": [1, 8],
+    "avg_latency": 0.45,
+    "success_rate": 0.99,
+    "throughput": 22.2
+  },
+  "recommendations": {
+    "production_max_concurrent": 8,
+    "auto_scaling_threshold": 6,
+    "timeout_settings": 10,
+    "retry_strategy": "exponential_backoff"
+  }
+}

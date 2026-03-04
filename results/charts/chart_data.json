@@ -1,0 +1,15 @@
+{
+  "performance_chart": {
+    "concurrent_levels": [1, 5, 10, 15, 20],
+    "success_rates": [1.0, 1.0, 0.96, 0.76, 0.12],
+    "avg_latencies": [0.12, 0.45, 0.78, 3.2, 8.45],
+    "cpu_usage": [15.2, 25.5, 45.3, 72.1, 92.5],
+    "memory_usage": [25.1, 45.2, 52.1, 68.7, 87.3]
+  },
+  "threshold_lines": {
+    "crash_threshold": 0.5,
+    "warning_threshold": 0.8,
+    "latency_warning": 3.0,
+    "latency_critical": 5.0
+  }
+}

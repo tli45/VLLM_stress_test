@@ -1,0 +1,5 @@
+threshold_type,concurrent_level,value,status,recommendation
+max_safe_concurrent,10,0.96,SAFE,可安全使用
+warning_threshold,15,0.44,WARNING,接近崩溃点
+crash_point,20,0.12,CRASH,服务器崩溃
+optimal_performance,5,1.0,OPTIMAL,最佳性能

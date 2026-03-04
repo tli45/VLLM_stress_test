@@ -1,0 +1,55 @@
+{
+  "server_config": {
+    "server_ip": "8.136.34.60",
+    "server_port": 80,
+    "model_name": "/home/models/Qwen3-4B",
+    "base_url": "http://8.136.34.60:80"
+  },
+  "test_strategies": {
+    "gradual": {
+      "description": "渐进式增加负载",
+      "parameters": {
+        "start_concurrent": 1,
+        "max_concurrent": 100,
+        "step_size": 5,
+        "requests_per_step": 20
+      }
+    },
+    "spike": {
+      "description": "突发流量冲击", 
+      "parameters": {
+        "spike_concurrent": 50,
+        "spike_duration": 10
+      }
+    },
+    "sustained": {
+      "description": "持续高负载",
+      "parameters": {
+        "concurrent": 20,
+        "duration": 60
+      }
+    }
+  },
+  "performance_thresholds": {
+    "critical": {
+      "success_rate": 0.5,
+      "avg_latency": 5.0,
+      "max_latency": 10.0
+    },
+    "warning": {
+      "success_rate": 0.8, 
+      "avg_latency": 3.0,
+      "max_latency": 5.0
+    },
+    "optimal": {
+      "success_rate": 0.95,
+      "avg_latency": 1.0,
+      "max_latency": 2.0
+    }
+  },
+  "monitoring": {
+    "check_interval": 1,
+    "max_duration": 300,
+    "save_interval": 5
+  }
+}

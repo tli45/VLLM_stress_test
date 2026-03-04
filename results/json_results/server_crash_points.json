@@ -1,0 +1,29 @@
+[
+  {
+    "crash_id": "crash_001",
+    "timestamp": "2024-12-15T14:32:15",
+    "concurrent_level": 20,
+    "crash_reason": "成功率过低导致服务器无响应",
+    "recovery_action": "自动重启服务",
+    "recovery_time_seconds": 15,
+    "parameters_at_crash": {
+      "strategy": "gradual",
+      "concurrent": 20,
+      "max_tokens": 50,
+      "temperature": 0.7,
+      "batch_size": 1
+    },
+    "metrics_before_crash": {
+      "success_rate": 0.12,
+      "avg_latency": 8.45,
+      "max_latency": 15.67,
+      "cpu_usage": 92.5,
+      "memory_usage": 87.3
+    },
+    "prevention_recommendations": [
+      "设置最大并发限制为15",
+      "添加熔断机制",
+      "监控成功率阈值"
+    ]
+  }
+]

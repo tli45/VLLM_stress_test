@@ -1,0 +1,30 @@
+{
+  "errors": [
+    {
+      "error_id": "err_001",
+      "timestamp": "2024-12-15T14:30:20",
+      "concurrent_level": 20,
+      "error_type": "ServerCrash",
+      "error_message": "HTTP 503: Service Unavailable",
+      "request_details": {
+        "url": "http://8.136.34.60:80/v1/chat/completions",
+        "method": "POST",
+        "parameters": {
+          "max_tokens": 50,
+          "temperature": 0.7
+        }
+      },
+      "stack_trace": "TimeoutError: The read operation timed out...",
+      "recovery_action": "wait_and_retry",
+      "resolution": "server_restart"
+    }
+  ],
+  "statistics": {
+    "total_errors": 3,
+    "error_types": {
+      "TimeoutError": 2,
+      "ConnectionError": 1
+    },
+    "most_common_concurrent": 20
+  }
+}
